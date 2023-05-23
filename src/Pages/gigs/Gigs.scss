@@ -1,0 +1,94 @@
+.Gigs{
+ display: flex;
+ justify-content: center;
+
+
+ .container{
+ display: flex;
+ flex-direction: column;
+ width: 1400px;
+ padding :30px 0px;
+ gap:20px;
+      .breadscrums{
+        font-weight: 300;
+        font-size: 13px;
+        color:#555
+    }
+    p{
+        color:#555;
+      font-weight: 300;
+
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            display: flex;
+            align-items: center;
+            gap:5px;
+            color:#555;
+
+            input{
+             padding:10px 0px;
+             border:1px solid lightgray;
+             outline:none;
+             border-radius: 5px;
+             &::placeholder{
+                color:lightgrey
+             }
+            }
+            button{
+                padding: 10px 15px;
+                background-color: #1dbf73;
+                color:white;
+                cursor:pointer;
+                border:none;
+                font-weight: 500px;
+                border-radius: 5px;
+
+            }
+        }
+        .right{
+     display: flex;align-items: center;gap:15px;
+     position: relative;
+
+     .sort{
+     font-weight: 300;
+     color:#555
+     }
+     .sortType{
+        font-weight: 500;
+        color:#555
+        }
+        img{
+            width: 14px;
+            color:black;
+            cursor:pointer
+        }
+        .rightmenu{
+            position: absolute;
+            background-color: white;
+            border:1px solid lightgray;
+            border:5px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            top: 30px;
+            right: 0;
+            gap:20px;
+            color:#555;
+            span{
+            cursor:pointer
+            }
+        }
+        }
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 10px;
+    }
+ }
+}

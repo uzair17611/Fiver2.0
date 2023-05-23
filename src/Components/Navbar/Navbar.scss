@@ -1,0 +1,106 @@
+.navbar{
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color:#013914;
+color: white;
+transition: 0.5s all ease;
+position: sticky;
+top:0;
+z-index: 999;
+&.Active{
+ background-color: white;
+ color:black;
+
+ 
+
+}
+    .container{
+           width: 1400px;
+           display: flex;
+           justify-content:space-between;
+           padding: 20px 0px;
+
+        .logo{
+            font-size: 34px;
+            font-weight: bold;
+
+
+
+            .text{
+               
+            }
+
+            .dot{
+                color:green
+            }
+
+        }
+        .links{
+            display: flex;
+            gap:24px;
+            font-weight: 500;
+            align-items: center;
+            font-family:"Montserrat" ,"sans-sarrif";
+            
+
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                position: relative;
+                img{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    object-fit:cover;
+                }
+                .options{
+                    position: absolute;
+                    display: flex;
+                    background-color: white;
+                    color:grey;
+                    top:50px;
+                    right:0;
+                    padding: 20px ;
+                    border-radius: 5px;
+                    border: 1px solid lightgray;
+                    flex-direction: column;
+                    gap:10px;
+                    width: 200px;
+                    font-weight: normal;
+                }
+            }
+         
+            button{
+                color:white;
+                border-radius: 5px;
+                margin-bottom: 3px;
+                padding: 10px 20px;
+                border: 1px white solid;
+                cursor: pointer;
+                background-color: transparent;
+                &:hover{
+                    background-color: #1bdf73;
+                    border-color:#1bdf73  ;
+                }
+               
+            }
+        }
+    }
+    hr{
+        width: 100%;
+        height: 0;
+        border: 0.5 solid lightgrey;
+    }
+    .menu{
+        width: 1400px;
+        display: flex;
+        font-family:"Montserrat" ,"sans-sarrif";
+        color:lightgrey;
+        padding:10px 0px;
+        justify-content: space-between;
+        font-weight: 300;
+    }
+}

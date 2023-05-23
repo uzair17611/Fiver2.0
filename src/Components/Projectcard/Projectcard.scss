@@ -1,0 +1,45 @@
+.projectcard{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 4px -9px 24px 0px rgba(15,6,6,0.74);
+-webkit-box-shadow: 4px -9px 24px 0px rgba(15,6,6,0.74);
+-moz-box-shadow: 4px -9px 24px 0px rgba(15,6,6,0.74);
+
+overflow: hidden;
+
+img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+
+}
+.info{
+
+    display: flex;
+    align-items: center;
+    gap:20px;
+    padding: 15px;
+    border-radius: 50%;
+    img{ 
+        width:40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+
+    }
+    .texts{
+        h2{
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+    }
+    span{
+     
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+}
