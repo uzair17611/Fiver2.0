@@ -54,7 +54,7 @@ const Navbar = () => {
                 {open && <div className="options">
                 {currentuser ?.isSeller  && (
                    <>
-                  <Link to='gigs' className='link'>Gigs</Link>
+                  <Link to='MYgigs' className='link'>Gigs</Link>
                   <Link to='/add' className='link'>Add New Gigs</Link>
                   </>
 

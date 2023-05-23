@@ -63,12 +63,12 @@ function App() {
 
       },{
         path:"/massages",
-        element:<Message/>
+        element:<Messages/>
 
       },
       {
-        path:"/massage/:id",
-        element:<Messages/>
+        path:"/message/:id",
+        element:<Message/>
 
       },
       {
