@@ -29,7 +29,7 @@ const Messages = () => {
             </tr>
             <tr className='active'>
               <td>John doe</td>
-              <td></td>
+              <td> <Link to="/message/123"  className="link">{messageText.substring(0, 100)}.... </Link></td>
               <td>1 aug 2010</td>
               <td>
                 <button>Mark as read</button>
@@ -38,7 +38,7 @@ const Messages = () => {
             <tr className='active'>
               <td>John doe</td>
               <td>
-                <Link to="message/123"  className="link">{messageText.substring(0, 100)}.... </Link>
+                <Link to="/message/123"  className="link">{messageText.substring(0, 100)}.... </Link>
               </td>
               <td>1 aug 2010</td>
               <td>
@@ -48,21 +48,21 @@ const Messages = () => {
             <tr>
               <td>John doe</td>
               <td>
-                <Link to="message/123"  className="link">{messageText.substring(0, 100)}....</Link>
+                <Link to="/message/123"  className="link">{messageText.substring(0, 100)}....</Link>
               </td>
               <td>1 aug 2010</td>
             </tr>
             <tr>
               <td>John doe</td>
               <td>
-                <Link to="message/123"  className="link">{messageText.substring(0, 100)}....</Link>
+                <Link to="/message/123"  className="link">{messageText.substring(0, 100)}....</Link>
               </td>
               <td>1 aug 2010</td>
             </tr>
             <tr>
               <td>John doe</td>
               <td>
-                <Link  to="message/123" className="link">{messageText.substring(0, 100)}....</Link>
+                <Link  to="/message/123" className="link">{messageText.substring(0, 100)}....</Link>
               </td>
               <td>1 aug 2010</td>
             </tr>
