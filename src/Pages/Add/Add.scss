@@ -1,0 +1,55 @@
+.add{
+    display: flex;
+ justify-content: center;
+
+
+    .container{
+       width: 1400px;
+       padding:20px 0px;
+
+       h1{
+        color:grey;
+        font-weight: 300;
+        margin-bottom: 30px;
+
+
+       }
+
+       .sections{
+        display: flex;justify-content: space-between;
+        gap:100px;
+
+
+        .right,
+        .left{
+            display: flex;
+            flex:1;
+            flex-direction: column;
+            gap:10px;
+            justify-content: space-between;
+
+            button{
+                color:white;
+                border:none;
+                background-color: #1dbf72;
+                padding:10px 20px;
+                cursor:pointer;
+                
+            }
+             label{
+                color:grey;
+                font-size: 18px;
+
+
+             }
+
+             input,select,textarea{
+                padding: 20px;
+             }
+        }
+
+    
+       }
+
+    }
+}
