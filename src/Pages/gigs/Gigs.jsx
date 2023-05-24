@@ -40,14 +40,16 @@ const Gigs = () => {
 
  { open && (<div className="rightmenu">
 
- {sort === "sales" ?(
-  <span onClick={() => {
-    SortedAt("sales");
-  }}>Best selling</span>
-) :(
-  <span onClick={() => {
-    SortedAt("createAt");
-  }}>Newest</span>)}
+ 
+              <div className="rightMenu">
+                {sort === "sales" ? (
+                  <span onClick={() => SortedAt("createdAt")}>Newest</span>
+                ) : (
+                  <span onClick={() => SortedAt("sales")}>Best Selling</span>
+                  )}
+                
+              </div>
+            
 </div>
 
 )}
