@@ -3,7 +3,7 @@ import "./Navbar.scss"
 import { useState } from 'react';
 import {Link} from "react-router-dom"
 import { useLocation } from 'react-router-dom';
-
+// import noavatar   from "../../public/noav"
 
 const Navbar = () => {
     const [Active ,SetActive] = useState(false);
@@ -17,11 +17,7 @@ const Navbar = () => {
 
     const {pathname} =useLocation()
 
-    const currentuser={
-        id :1,
-        userName:"john doe",
-        isSeller:true
-    }
+    const currentuser= JSON.parse(localStorage.getItem("currentUser" ,))
 
     useEffect(()=>{
      window.addEventListener("scroll" , isActive)
@@ -49,7 +45,7 @@ const Navbar = () => {
         {currentuser && (
             <>
             <div className="user"  onClick={()=>Setopen(!open)}>
-                <img  src="https://images.unsplash.com/photo-1577974291737-faf660945d53?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGV0dGVyJTIwYXxlbnwwfHwwfHw%3D&w=1000&q=80" alt='image'></img>
+                <img  src={currentuser.imggot } alt='image'></img>
                 <span>{currentuser.userName}</span>
                 {open && <div className="options">
                 {currentuser ?.isSeller  && (
